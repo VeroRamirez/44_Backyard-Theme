@@ -1,0 +1,102 @@
+$colorMenu: white;
+$anchoLogo: 100px;
+$margin: 4%;
+$marginSec: 12%;
+$txt:white;
+$btnColor: #5bc0de;
+$tamaIcono: 20px;
+$paddingTopSec:5%;
+
+.logo{
+    width: $anchoLogo;
+}
+
+.navbar-default{
+    background-color: $colorMenu;	
+}
+
+.banner{
+    background-image: url("../images/1920x665-1.jpg");
+    background-repeat: none;
+    background-size: cover;
+    height: 400px;
+    margin-top: $margin;
+    &>div{
+        background-color: rgba(92,85,85,0.8);
+        height: 100%;
+        color:$txt;
+    }
+}
+
+#seccion1{
+    span{
+        padding: 10px;
+    }
+    h1{
+        margin-top: $marginSec;
+        margin-bottom: 5%;
+    }
+}
+
+.btn-info{
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin: 2% 3% 2% 0%;
+    &:hover{
+        background-color:transparent;
+        border-color: $btnColor;
+        color: $btnColor;
+    }
+}
+
+.btn-sec2{
+    @extend .btn-info;
+    background-color:transparent;
+    border-color: $btnColor;
+    color: $btnColor;
+    &:hover{
+        background-color:$btnColor;
+        color: $colorMenu;
+    }
+}
+
+#seccion2{
+    padding-top: $paddingTopSec;
+    padding-bottom: $paddingTopSec;
+    img{
+        max-width: 70%;
+    }
+    span{
+        color: $btnColor;
+    }
+}
+
+#seccion3{
+        background-color: gainsboro;
+        padding: $paddingTopSec 0px;
+    img{
+        max-width: 50%;
+    }
+    h2{
+        padding-bottom: $paddingTopSec;
+    }
+}
+
+footer{
+    padding-top: $paddingTopSec;
+    i{
+        color: $btnColor;
+        font-size: $tamaIcono !important;
+        border: 1px solid $btnColor;
+        border-radius: 50%;
+        padding: 8px;
+    }
+    p{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    span{
+        color: $btnColor;
+    }
+}
+
